@@ -30,13 +30,13 @@ class ChatA {
 
   openFrame() {
     if (this.isOpen) return;
-    console.log('init iframe')
+    // console.log('init iframe')
     this.iframe = document.createElement("iframe");
     this.iframe.src = `iframe.html`;
 
-    this.iframe.frameBorder = "0";
+    // this.iframe.frameBorder = "0";
     this.iframe.id = "iframe";
-    this.iframe.sandbox = "allow-same-origin allow-scripts allow-popups allow-forms";
+    // this.iframe.sandbox = "allow-same-origin allow-scripts allow-popups allow-forms";
     this.iframe.style.position = "absolute";
     this.iframe.style.zIndex = "999";
     this.iframe.style.height = "290px";
